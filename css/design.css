@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  color: #051e3a;
+  font-family: 'Ariata Text W05 Medium', Georgia, serif; }
+
+.lightBlue {
+  background: #ebf0ff; }
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 4rem;
+  padding-top: 8rem; }
+
+h2 {
+  font-size: 1.8rem; }
+  h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 2px 0 2rem;
+    border-bottom: solid 3.5px #d6e2ff; }
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem; }
+
+p {
+  font-family: 'Applied Sans W05 Regular', Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  color: rgba(5, 30, 58, 0.8); }
+
+#intro {
+  height: 100vh; }
+
+.main {
+  width: 85%;
+  margin: 4rem auto; }
+  .main #persona {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5fr 6fr;
+    grid-template-columns: 5fr 6fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    background: #fff;
+    border-radius: 0.75rem; }
+  .main #info {
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    .main #info i {
+      color: #feb15e;
+      margin-right: 0.5rem; }
+    .main #info .box {
+      background: #ebf0ff;
+      padding: 1.5rem;
+      border-radius: 0.5rem; }
+    .main #info #beliefs {
+      padding: 0.5rem;
+      height: 320px; }
+      .main #info #beliefs p {
+        margin: 0; }
+      .main #info #beliefs:hover #beliefsGrid {
+        display: none; }
+      .main #info #beliefs:hover #hoverContent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .main #info #beliefs #hoverContent {
+        display: none; }
+      .main #info #beliefs #beliefsGrid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto 1fr 1fr 1fr auto;
+        grid-template-columns: auto 1fr 1fr 1fr auto;
+        -ms-grid-rows: auto 1fr 2fr 1fr auto;
+        grid-template-rows: auto 1fr 2fr 1fr auto;
+        padding: 0;
+        font-size: 0.8rem;
+        color: rgba(5, 30, 58, 0.6); }
+        .main #info #beliefs #beliefsGrid .horizontal {
+          margin: 0.5rem 0;
+          -ms-grid-column-span: 5;
+          grid-column-end: span 5;
+          text-align: center; }
+        .main #info #beliefs #beliefsGrid .vertical {
+          margin: 0 0.5rem;
+          -ms-grid-row-span: 3;
+          grid-row-end: span 3;
+          text-align: center;
+          -webkit-writing-mode: vertical-rl;
+          -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl; }
+        .main #info #beliefs #beliefsGrid .cell {
+          padding: 0.25rem;
+          min-height: 50px;
+          height: auto; }
+        .main #info #beliefs #beliefsGrid .personaStance {
+          background: #040f78;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 100%;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center;
+          line-height: 1;
+          color: #ebf0ff;
+          border-radius: 0.25rem; }
+          .main #info #beliefs #beliefsGrid .personaStance i {
+            margin: 0;
+            padding: 0;
+            color: #ebf0ff; }
+        .main #info #beliefs #beliefsGrid .vertBorder {
+          border-left: dotted 3px #fff; }
+        .main #info #beliefs #beliefsGrid .hzntlBorder {
+          border-bottom: dotted 3px #fff; }
+  .main #personaImage {
+    background: url("../img/personaImage.jpg") center center no-repeat;
+    background-size: cover;
+    -ms-grid-row-span: 2;
+    grid-row-end: span 2;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem; }
+    .main #personaImage #quote {
+      background: rgba(5, 30, 58, 0.8);
+      border-radius: 0.5rem;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-family: 'Applied Sans W05 Regular', Helvetica, sans-serif;
+      font-size: 1.3rem; }
+      .main #personaImage #quote i {
+        font-size: 1rem;
+        margin: 0 0.25rem; }
+  .main #personaExplanation {
+    background: rgba(5, 30, 58, 0.9);
+    padding: 2rem;
+    color: white;
+    border-bottom-right-radius: 1rem; }
+    .main #personaExplanation p {
+      color: white; }
+
+.socialPost {
+  margin-top: 8rem; }
