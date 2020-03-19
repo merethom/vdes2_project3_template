@@ -5,15 +5,33 @@
 html
   color: #051e3a
   font-family: 'Ariata Text W05 Medium', Georgia, serif
+  scroll-behavior: smooth
 
 .lightBlue
     background: #ebf0ff
 
 h1
-  font-size: 2.2rem
+  font-size: 2.5rem
   text-align: center
-  margin: 4rem
-  padding-top: 8rem
+  margin-bottom: 1rem
+
+.h1Title
+  font-family: 'Applied Sans W05 Regular', Helvetica, sans-serif
+  font-size: 1.25rem
+  line-height: 1.4
+  color: rgba(5, 30, 58, 0.8)
+  margin: 0 auto 12rem
+  text-align: center
+  max-width: 60%
+.icon
+  padding-top: 11rem
+  color: #feb15e
+  margin: 0 auto 1rem
+  width: 100%
+  font-size: 2.1rem
+  text-align: center
+
+
 h2
   font-size: 1.8rem
   &::after
@@ -36,16 +54,43 @@ p
 
 
 
+
+
 #intro
   height: 100vh
+  display: grid
+  align-items: center
+  text-align: center
+
+  #scales
+    font-size: 4rem
+    color:  #feb15e
+    margin-bottom: 3rem
+
+  h1
+    font-size: 3rem
+    color: darken(#4467fd, 30)
+
+  p
+    font-size: 1.5rem
+    margin-bottom: 4rem
+
+  a
+    color: rgba(5, 30, 58, 0.8)
+    font-size: 1.65rem
+    text-decoration: none
+    transition: all 200ms
+    &:hover
+      color: darken(#4467fd, 30)
 
 
 .main
   width: 85%
   // max-width: 1800px
-  margin: 4rem auto
+  margin: 0 auto
 
-  #persona
+
+  #personaBox
     width: 100%
     display: grid
     grid-template-columns: 5fr 6fr
@@ -67,65 +112,6 @@ p
       background: #ebf0ff
       padding: 1.5rem
       border-radius: 0.5rem
-
-    #beliefs
-      padding: 0.5rem
-      height: 320px
-
-      p
-        margin: 0
-
-      &:hover #beliefsGrid
-        display: none
-      &:hover #hoverContent
-        display: flex
-
-      #hoverContent
-        display: none
-
-      #beliefsGrid
-        display: grid
-        grid-template-columns: auto 1fr 1fr 1fr auto
-        grid-template-rows: auto 1fr 2fr 1fr auto
-        padding: 0
-        font-size: 0.8rem
-        color: rgba(5, 30, 58, 0.6)
-
-        .horizontal
-          margin: 0.5rem 0
-          grid-column-end: span 5
-          text-align: center
-
-        .vertical
-          margin: 0 0.5rem
-          grid-row-end: span 3
-          text-align: center
-          writing-mode: vertical-rl
-
-        .cell
-          padding: 0.25rem
-          min-height: 50px
-          height: auto
-
-        .personaStance
-          background: #040f78
-          display: flex
-          height: 100%
-          align-items: center
-          justify-content: center
-          flex-direction: column
-          text-align: center
-          line-height: 1
-          color: #ebf0ff
-          border-radius: 0.25rem
-          i
-            margin: 0
-            padding: 0
-            color: #ebf0ff
-        .vertBorder
-          border-left: dotted 3px #fff
-        .hzntlBorder
-          border-bottom: dotted 3px #fff
 
 
   #personaImage

@@ -4,16 +4,33 @@
 
 html {
   color: #051e3a;
-  font-family: 'Ariata Text W05 Medium', Georgia, serif; }
+  font-family: 'Ariata Text W05 Medium', Georgia, serif;
+  scroll-behavior: smooth; }
 
 .lightBlue {
   background: #ebf0ff; }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin: 4rem;
-  padding-top: 8rem; }
+  margin-bottom: 1rem; }
+
+.h1Title {
+  font-family: 'Applied Sans W05 Regular', Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: rgba(5, 30, 58, 0.8);
+  margin: 0 auto 12rem;
+  text-align: center;
+  max-width: 60%; }
+
+.icon {
+  padding-top: 11rem;
+  color: #feb15e;
+  margin: 0 auto 1rem;
+  width: 100%;
+  font-size: 2.1rem;
+  text-align: center; }
 
 h2 {
   font-size: 1.8rem; }
@@ -36,12 +53,37 @@ p {
   color: rgba(5, 30, 58, 0.8); }
 
 #intro {
-  height: 100vh; }
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+  #intro #scales {
+    font-size: 4rem;
+    color: #feb15e;
+    margin-bottom: 3rem; }
+  #intro h1 {
+    font-size: 3rem;
+    color: #0221a6; }
+  #intro p {
+    font-size: 1.5rem;
+    margin-bottom: 4rem; }
+  #intro a {
+    color: rgba(5, 30, 58, 0.8);
+    font-size: 1.65rem;
+    text-decoration: none;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms; }
+    #intro a:hover {
+      color: #0221a6; }
 
 .main {
   width: 85%;
-  margin: 4rem auto; }
-  .main #persona {
+  margin: 0 auto; }
+  .main #personaBox {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -65,74 +107,6 @@ p {
       background: #ebf0ff;
       padding: 1.5rem;
       border-radius: 0.5rem; }
-    .main #info #beliefs {
-      padding: 0.5rem;
-      height: 320px; }
-      .main #info #beliefs p {
-        margin: 0; }
-      .main #info #beliefs:hover #beliefsGrid {
-        display: none; }
-      .main #info #beliefs:hover #hoverContent {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-      .main #info #beliefs #hoverContent {
-        display: none; }
-      .main #info #beliefs #beliefsGrid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: auto 1fr 1fr 1fr auto;
-        grid-template-columns: auto 1fr 1fr 1fr auto;
-        -ms-grid-rows: auto 1fr 2fr 1fr auto;
-        grid-template-rows: auto 1fr 2fr 1fr auto;
-        padding: 0;
-        font-size: 0.8rem;
-        color: rgba(5, 30, 58, 0.6); }
-        .main #info #beliefs #beliefsGrid .horizontal {
-          margin: 0.5rem 0;
-          -ms-grid-column-span: 5;
-          grid-column-end: span 5;
-          text-align: center; }
-        .main #info #beliefs #beliefsGrid .vertical {
-          margin: 0 0.5rem;
-          -ms-grid-row-span: 3;
-          grid-row-end: span 3;
-          text-align: center;
-          -webkit-writing-mode: vertical-rl;
-          -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl; }
-        .main #info #beliefs #beliefsGrid .cell {
-          padding: 0.25rem;
-          min-height: 50px;
-          height: auto; }
-        .main #info #beliefs #beliefsGrid .personaStance {
-          background: #040f78;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          height: 100%;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          text-align: center;
-          line-height: 1;
-          color: #ebf0ff;
-          border-radius: 0.25rem; }
-          .main #info #beliefs #beliefsGrid .personaStance i {
-            margin: 0;
-            padding: 0;
-            color: #ebf0ff; }
-        .main #info #beliefs #beliefsGrid .vertBorder {
-          border-left: dotted 3px #fff; }
-        .main #info #beliefs #beliefsGrid .hzntlBorder {
-          border-bottom: dotted 3px #fff; }
   .main #personaImage {
     background: url("../img/personaImage.jpg") center center no-repeat;
     background-size: cover;
