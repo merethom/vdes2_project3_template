@@ -65,8 +65,8 @@ p {
     color: #feb15e;
     margin-bottom: 3rem; }
   #intro h1 {
-    font-size: 3rem;
-    color: #0221a6; }
+    font-size: 3.2rem;
+    color: #051e4f; }
   #intro p {
     font-size: 1.5rem;
     margin-bottom: 4rem; }
@@ -92,7 +92,8 @@ p {
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     background: #fff;
-    border-radius: 0.75rem; }
+    border-radius: 0.75rem;
+    margin-bottom: 12rem; }
   .main #info {
     padding: 2rem;
     display: -ms-grid;
@@ -138,5 +139,23 @@ p {
     .main #personaExplanation p {
       color: white; }
 
-.socialPost {
-  margin-top: 8rem; }
+.post {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10rem; }
+  .post p {
+    margin-top: 2rem; }
+
+hr {
+  border: solid 2px #d6e2ff;
+  width: 90%;
+  margin: 0 auto 10rem; }
+
+footer {
+  margin: 20rem 0 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5); }
