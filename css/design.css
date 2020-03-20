@@ -145,14 +145,21 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 10rem; }
+  margin-bottom: 15rem; }
+  .post h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center; }
+    .post h4::after {
+      content: "";
+      display: block;
+      width: 90%;
+      padding-top: 0.5rem;
+      margin: 2px auto 3rem;
+      border-bottom: solid 3.5px #d6e2ff; }
   .post p {
-    margin-top: 2rem; }
-
-hr {
-  border: solid 2px #d6e2ff;
-  width: 90%;
-  margin: 0 auto 10rem; }
+    margin-top: 3rem;
+    text-align: justify; }
 
 footer {
   margin: 20rem 0 3rem;
